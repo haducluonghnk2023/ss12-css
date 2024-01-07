@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(0deg, #F3F3F3, #F3F3F3),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-left {
+    width: 170.05px;
+    top: 18px;
+    height: 144px;
+    left: 79px;
+    border: 1px dashed #9747FF; /* Màu đứt hồng */
+    background: #FFFFFF; /* Màu trắng */
+    border-radius: 8px; /* Để làm cho viền tròn hơn */
+    line-height: calc(8);
+    color: #151411;
+}
+
+.header-left .header-left-item {
+    gap: 12px;  
+    width: 130.05px;
+    height: 42px;
+    top: 20px;
+    left: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-left span {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-between {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.header-between a {
+    color: #151411;
+}
+
+.header-between a:active {
+    color: #518581;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+}
+
+
+body {
+    font-family: Eudoxus Sans;
+}
+
+.header1 {
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+
+
+.header1 p {
+    font-family: Eudoxus Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    justify-content: center;
+    color: #AFADB5;
+
+}
+
+button {
+    padding: 8px, 16px, 8px, 16px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:  #518581;
+    color: white;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 100px;
+    height: 40px;
+}
+.element {
+    position: absolute;
+    top: 600px;
+    left: 10%; 
+    transform: translate(0%, -10%);
+    text-align: left;
+}
+
+.element p{
+    font-weight: 700;
+    font-size: 44px;
+    color: 
+    #FFFFFF;
+    font-family: Eudoxus Sans;
+}
+.element span {
+   
+    font-weight: 700;
+    font-size: 24px;
+    font-family: Eudoxus Sans;
+    color: #FFFFFF;
+    line-height: 31px;
+
+
+}
+
+.imgg {
+    width: 100%;
+    height: 600px;
+    background-image: url('https://donggia.vn/wp-content/uploads/2019/10/thiet-ke-noi-that-phong-khach-biet-thu-dep-hien-dai-2020-19.jpg');
+    background-repeat: no-repeat;
+    
+}
+.imgg .element {
+    gap: 15px;
+}
+.button-left,
+.button-right {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #15141199;
+
+}
+
+.button-left {
+    left: -80px; 
+    top: 50px;
+}
+
+.button-right {
+    right: -800px;
+    top: 50px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}

@@ -25,9 +25,9 @@ a {
     top: 18px;
     height: 144px;
     left: 79px;
-    border: 1px dashed #9747FF; /* Màu đứt hồng */
-    background: #FFFFFF; /* Màu trắng */
-    border-radius: 8px; /* Để làm cho viền tròn hơn */
+    border: 1px dashed #9747FF; 
+    background: #FFFFFF;
+    border-radius: 8px; 
     line-height: calc(8);
     color: #151411;
 }
@@ -72,6 +72,10 @@ a {
 body {
     font-family: Eudoxus Sans;
 }
+
+
+/* nav */
+
 
 .header1 {
     padding: 20px;
@@ -175,4 +179,72 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
+}
+
+/* nav end */
+
+
+
+.search-filter{
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.search-filter .search{
+    margin-left: 100px;
+}
+.search-filter .search input{
+    width: 1050px;
+    height: 90px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    background-image: url(https://static-00.iconduck.com/assets.00/search-normal-1-icon-256x256-nnq79qen.png);
+    background-repeat: no-repeat;
+    background-position: 30px 25px;
+    background-size: 32px;
+    padding: 10px 20px 10px 80px;
+    position: relative;
+}
+.search input ::placeholder{
+    color:#AFADB5;
+}
+.search-filter .search button{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    top: 1060px;
+    left: 1005px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #518581;
+    padding: 0 18px;
+    border: transparent;
+    color: #FFFFFF;
+    
+    
+}
+.search-filter .search button:hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.search-filter .filter{
+    width: 185px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 110px;
+}
+.filter .material-symbols-outlined{
+    font-size: 33px;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+}
+.filter div{
+    font-size: 16px;
+    font-weight: 500;
 }
